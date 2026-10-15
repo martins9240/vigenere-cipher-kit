@@ -1,0 +1,17 @@
+{
+  "name": "vigenere-cipher-kit",
+  "version": "0.1.0",
+  "description": "A Vigenère cipher implementation for encrypting and decrypting text with a keyword.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {}
+}
