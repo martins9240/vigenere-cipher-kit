@@ -1,6 +1,6 @@
 {
   "name": "vigenere-cipher-kit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A Vigen\u00e8re cipher implementation for encrypting and decrypting text with a keyword.",
   "type": "module",
   "main": "src/index.js",
