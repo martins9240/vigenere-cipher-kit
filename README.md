@@ -22,3 +22,10 @@ Output is always uppercase. Input is treated case-insensitively for letters; low
 Non-letters (spaces, digits, punctuation) pass through unchanged **and do not advance the keyword pointer**. This is the classic Tabula Recta rule: `encipher('A B', 'K')` produces `'B C'`, and the `B` depends only on the first `A`, not on the space.
 
 A keyword must contain at least one A–Z letter. `'123'` throws; `''` throws. Keyword case is ignored.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
